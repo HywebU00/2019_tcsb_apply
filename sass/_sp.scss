@@ -532,6 +532,13 @@ $_activeColor:#3c7cb1;
                color: #eb5503;
             }
         }
+        select{
+            &.form-control{
+                padding-right: 30px;
+                background: #fff url(../images/basic/icon_select_arrow.png) no-repeat right 2px center;
+                background-size: 16px;
+            }
+        }
         .form-control{
             height: 38px;
             box-shadow: none;
