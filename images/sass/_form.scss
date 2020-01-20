@@ -1,0 +1,215 @@
+@charset "utf-8";
+
+/*---------form--------forward 、qp 、 */
+
+.forwardForm,
+.qp {
+    h3 {
+        margin: 0 0px 10px;
+        font-size: 1.25em;
+        font-weight: bold;
+        color: #F90;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        clear: both;
+        margin: 0 0 20px;
+        color: #313131;
+        background-color: #fff;
+        caption {
+            display: none;
+        }
+        th {
+            background-color: #e6e6e6;
+            color: #000;
+            text-align: right;
+            padding: 10px;
+            border: 1px solid #ccc;
+            white-space: nowrap;
+            font-weight: normal;
+            width: 20%;
+        }
+        td {
+            color: #313131;
+            border: 1px solid #CCC;
+            padding: 10px;
+            position: relative;
+            select {
+                border: 1px solid #ccc;
+                border-radius: 0;
+                padding: 3px 3px 6px;
+            }
+            .text2
+            {
+                border: 1px solid #ccc;
+                border-radius: 0;
+                padding: 4px 3px;
+                
+                
+            }
+            .text {
+                width: 100%;
+                border: 1px solid #ccc;
+                padding: 4px 3px;
+               
+            }
+            input {
+                vertical-align: middle;
+                margin: 0 0px 0 0;
+                font-size: 100%;
+            }
+            textarea {
+                width: 100%;
+                border: 1px solid #ccc;
+                padding: 0 3px;
+            }
+            a {
+                color: #006699;
+                text-decoration: none;
+                &:hover {
+                    color: #CC0000;
+                    text-decoration: none;
+                }
+            }
+            p{
+                margin:10px 0;display: block;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .forwardForm table,
+    .forwardForm thead,
+    .forwardForm tbody,
+    .forwardForm th,
+    .forwardForm td,
+    .forwardForm tr,
+    .qp table,
+    .qp thead,
+    .qp tbody,
+    .qp th,
+    .qp td,
+    .qp tr {
+        display: block;
+    }
+    .forwardForm,
+    .qp {
+        table {
+            border: none;
+            border: 1px solid #ccc;
+            tr {
+                border-bottom: none;
+                margin: 0;
+            }
+            th {
+                width: 100%;
+                text-align: left;
+                border: none;
+                border-bottom: 1px solid #ccc;
+                padding: 7px;
+            }
+            td {
+                border: none;
+                border-bottom: 1px solid #ccc;
+                position: relative;
+                padding-left: 2%;
+                .text,
+                textarea {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+/*------------------------------------------------------------star*/
+
+.must {
+    color: #FF0000;
+    margin: 0px 5px 0 0;
+    font-size: 150%;
+    font-weight: bold;
+    vertical-align: bottom;
+    line-height: 110%;
+}
+
+
+/*--------------------------------------------------------------------------formBtn--*/
+
+.formBtn {
+    margin: 10px 0 30px;
+    text-align: center;
+    img {
+        vertical-align: middle;
+        margin: 0 5px;
+    }
+}
+
+
+.btn_color {
+    background-color: $_aColor;
+    position: relative;
+    border: 1px solid $_aColor;
+    color: #fff;
+    padding: 8px 15px;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 0;
+    font-family: "微軟正黑體";
+    font-size: 1.06em;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    &:hover{
+        color: #fff;
+        background-color: $_cpaColor;
+        border: 1px solid $_cpaColor;
+    }
+}
+.btn_lightgray {
+    background-color: #c9c9c9 ;
+    position: relative;
+    border: 1px solid #c9c9c9;
+    color: #333;
+    padding: 3px 10px;
+    cursor: pointer;
+    vertical-align: middle;
+    margin:5px 0;
+    font-family: "微軟正黑體";
+    font-size: 1.06em;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    &:hover{
+        color: #000;
+        background-color: #b5b5b5;
+        border: 1px solid #b5b5b5;
+    }
+}
+
+
+
+.btn_gray {
+    background-color: #7d7d7d;
+    position: relative;
+    border: 1px solid #7d7d7d;
+    color: #fff;
+    padding: 8px 15px;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 0;
+    font-family: "微軟正黑體";
+    font-size: 1.06em;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    &:hover{
+        background-color: #626262;
+        border: 1px solid #626262;
+    }
+}
+
