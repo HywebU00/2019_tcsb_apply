@@ -386,6 +386,14 @@
                         }
                     }
                 }
+                .apply_btn{
+                    float:right;
+                    margin-left:10px;
+                    @media(max-width:400px){
+                        float:none;
+                        margin:0 0 10px 0;
+                    }
+                }
                 .beau {
                     margin: 0 0 7px;
                     padding: 0 15px 0 0;
@@ -699,7 +707,7 @@
         }
     }
 }
-// 化學物質區塊 
+// 化學物質區塊
 .material_block {
     clear: both;
     h2 {
@@ -1149,4 +1157,27 @@
 }
 body.fix {
     overflow: hidden;
+}
+
+.apply_btn{
+    a{
+        background: $_aColor;
+        color:#fff;
+        vertical-align:middle;
+        &:before{
+            content:"";
+            display:inline-block;
+            width:16px;
+            height:16px;
+            background:url(../images/basic/icon_pen.png) no-repeat;
+            background-size:100%;
+            vertical-align:middle;
+            margin: -1px 3px 0 0;
+        }
+        &:hover{
+            text-decoration: none;
+            background: $_aHover;
+            color:#fff;
+        }
+    }
 }

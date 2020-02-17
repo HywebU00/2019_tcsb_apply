@@ -145,6 +145,10 @@
     padding: 0 0 10px;
     clear: both;
     float: none;
+    display:inline-block;
+    @media (max-width: 767px){
+        display:block;
+    }
     li {
         display: inline-block;
         margin: 0 10px 0 0;
@@ -516,13 +520,13 @@
                     color: #333;
                     padding: 0 0 0 5px;
                     &:hover{
-                        color:$_aHover; 
+                        color:$_aHover;
                     }
                 }
             }
         }
-    
-        
+
+
         span{
            margin: 0 0 20px;
            position: relative;
@@ -548,4 +552,22 @@
             }
         }
     }
+}
+.cp{
+    .apply_btn{
+        float:right;
+        margin-left: 10px;
+        a{
+            color:#fff;
+            text-decoration:none;
+            &:hover{
+                color:#fff;
+                text-decoration:none;
+            }
+        }
+        @media (max-width: 767px){
+            margin: 0 0 10px 0;
+        }
+    }
+
 }
