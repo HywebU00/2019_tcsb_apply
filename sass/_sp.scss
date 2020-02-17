@@ -165,6 +165,9 @@ $_activeColor:#3c7cb1;
     .top{
         position: relative;
         padding:0 0 20px 0;
+        h1{
+            padding-right:180px;
+        }
         .tab_group{
             >a{
                 display: inline-block;
