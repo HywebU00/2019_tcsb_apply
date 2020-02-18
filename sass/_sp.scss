@@ -167,6 +167,9 @@ $_activeColor:#3c7cb1;
         padding:0 0 20px 0;
         h1{
             padding-right:180px;
+            @media (max-width: 767px){
+                padding-right:0;
+            }
         }
         .tab_group{
             >a{

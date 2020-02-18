@@ -1164,6 +1164,8 @@ body.fix {
         background: $_aColor;
         color:#fff;
         vertical-align:middle;
+        font-size:1em;
+        font-weight:normal;
         &:before{
             content:"";
             display:inline-block;
@@ -1174,7 +1176,7 @@ body.fix {
             vertical-align:middle;
             margin: -1px 3px 0 0;
         }
-        &:hover{
+        &:hover, &:focus{
             text-decoration: none;
             background: $_aHover;
             color:#fff;
