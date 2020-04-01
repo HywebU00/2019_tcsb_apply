@@ -692,6 +692,9 @@ $_activeColor:#3c7cb1;
         padding: .2em 1em !important;
         border-radius: 4px;
         background-clip: padding-box;
+        @media (max-width: 767px){
+            top:2px;
+        }
     }
 }
 
