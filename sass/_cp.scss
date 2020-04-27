@@ -527,6 +527,20 @@
     }
 }
 /*----------------------------------------------map----*/
+.TaiwanMap{
+    @media(max-width: 767px){
+        max-width: 767px;
+        overflow-x: auto;
+    }
+    @media(max-width: 577px){
+        max-width: 577px;
+        overflow-x: auto;
+    }
+    @media(max-width: 480px){
+        max-width: 480px;
+        overflow-x: auto;
+    }
+}
 .map {
     display: block;
     margin: 2em auto 3em auto !important;
@@ -539,6 +553,18 @@
     left: 0;
     right: 0;
     background: url(../images/map.png) 0 0 no-repeat;
+    @media(max-width: 767px){
+        left:100px;
+        right:60px;
+    }
+    @media(max-width:577px){
+        left:160px;
+        right:160px;
+    }
+    @media(max-width:480px){
+        left:220px;
+        right:160px;
+    }
 }
 .TotalHome {
     color: #333;
@@ -1663,50 +1689,4 @@
 }
 .map-med2 {
     width: 20px;
-}
-@media (max-width:767px) {
-    .TaiwanMap {
-        max-width: 767px;
-        overflow-x: auto;
-    }
-    .map-service .location5 li.Island1 {
-        top: 3px;
-        right: 69px;
-        width: 72px;
-        font-size: 0.8em
-    }
-    .map-service .location5 li.Island1:before, .map-service .location5 li.Island1:after {
-        top: 55px;
-        right: 21px;
-        width: 33px;
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
-    }
-    .map-service .location5 li.Island1:after {
-        top: 55px;
-        right: 15px;
-    }
-    .map-service .location5 li.Island2 {
-        bottom: 129px;
-        left: -18px;
-        width: 61px;
-        font-size: 0.8em;
-    }
-    .map-service .location5 li.Island2:before, .map-service .location5 li.Island2:after {
-        top: 26px;
-        left: 16px;
-        width: 20px;
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
-    }
-    .map-service .location5 li.Island2:after {
-        top: 34px;
-        left: 23px;
-    }
-}
-@media (max-width:480px) {
-    .TaiwanMap {
-        max-width: 480px;
-        overflow-x: auto;
-    }
 }
