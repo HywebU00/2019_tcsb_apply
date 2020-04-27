@@ -56,14 +56,14 @@
                         </div>
                         <!--search-->
                         <div class="Search">
-                            <div class="accesskey hidden-xs"><a href="#" accesskey="S" title="站內搜尋">:::</a></div>
+                            <div class="accesskey hidden-xs"><a href="#aS" id="aS" accesskey="S" title="站內搜尋">:::</a></div>
                             <form class="navbar-form" role="search">
                                 <div class="input-group">
                                     <input type="text" class="form-control" placeholder="全站搜尋">
                                     <span class="input-group-btn">
-                <button type="button" class="btn"> <span class="glyphicon glyphicon-search"></span> </button>
-                                    <button type="button" class="btn advance"> 進階查詢 </button>
-                                    </span> </div>
+                                        <button type="button" class="btn"> <span class="glyphicon glyphicon-search"></span> </button>
+                                        <!--  <button type="button" class="btn advance"> 進階查詢 </button> -->
+                                    </span><span class="advance"><a href="javascript:;">進階查詢</a></span> </div>
                                 <div class="HotKeywords"> 熱門關鍵字： <a href="#">申報</a> <a href="#">毒物化諮詢</a> <a href="#">三聚氰胺</a> </div>
                             </form>
                         </div>
@@ -196,8 +196,8 @@
                                 <label><input name="radioSample" type="radio" value="">最近30日</label>
                                 <label><input name="radioSample" type="radio" value="">累計點閱</label>
                                 <span>
-                                <label>關鍵字：</label><input type="text" id="" placeholder="請輸入文字"><input name="" type="submit" value="查詢" />
-                              </span>
+                                    <label>關鍵字：</label><input type="text" id="" placeholder="請輸入文字"><input name="" type="submit" value="查詢" />
+                                </span>
                             </div>
                             <!--分類 end -->
                             <!--listTb start -->
@@ -303,9 +303,9 @@
                             <!--page start -->
                             <section class="page"><span class="data"> 共<em>308</em>筆資料，第<em>1/18</em>頁，</span>
                                 <ul class="number">
-                                    <li class="first"><a title="第一頁" href="#"> << </a></li>
-                                    <li class="prev"><a title="上1頁" href="#"> < </a></li>
-                                    <li class="here"><a href="#" title="1">1</a></li>
+                                    <li class="first"><a title="第一頁" href="#">
+                                            << </a> </li> <li class="prev"><a title="上1頁" href="#">
+                                                    < </a> </li> <li class="here"><a href="#" title="1">1</a></li>
                                     <li class="hidden-xs"><a href="#" title="2">2</a></li>
                                     <li class="hidden-xs"><a href="#" title="3">3</a></li>
                                     <li class="hidden-xs"><a href="#" title="4">4</a></li>
@@ -314,8 +314,8 @@
                                     <li class="last"><a title="最後一頁" href="#"> >> </a></li>
                                 </ul>
                                 <span class="items">每頁顯示 <a href="#">20</a> <a href="#">40</a> <a href="#">60</a>
-              </ul>
-              筆 </span> </section>
+                                    </ul> 筆 </span>
+                            </section>
                             <!--page  end -->
                             <!--bottomfunction start -->
                             <div class="bottomfunction">

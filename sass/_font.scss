@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@mixin fontSetting($FONT-SIZE:16px, $LINE-HEIGHT:1.75em, $WEIGHT:normal) {
+@mixin fontSetting($FONT-SIZE:1em, $LINE-HEIGHT:1.75em, $WEIGHT:normal) {
     font-size: $FONT-SIZE;
     line-height: $LINE-HEIGHT;
     font-weight: $WEIGHT;
@@ -14,7 +14,7 @@
 body {
     @include fontSetting(1em);
     color: #333;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 a {

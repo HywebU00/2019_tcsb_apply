@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="assets/module/slick/slick-theme.css">
     <!--fontello icon font -->
     <link rel="stylesheet" href="assets/module/fontello/css/fontello.css">
+    <!-- 燈箱CSS -->
+    <link rel="stylesheet" href="assets/dist/css/lightbox.css">
+    <!--這一頁有燈箱效果，請加上這支CSS -->
     <!-- 自訂CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.offcanvas.css">
     <link rel="stylesheet" href="css/design.css">
@@ -51,7 +54,7 @@
                                 <li><a href="#">常見問題</a></li>
                                 <li><a href="#">網站導覽</a></li>
                                 <!-- <li><a href="#">RSS</a></li>
-                    <li><a href="#">English</a></li> -->
+              <li><a href="#">English</a></li> -->
                             </ul>
                         </div>
                         <!--search-->
@@ -180,101 +183,69 @@
                             <li><a href="#">訊息公告</a></li>
                             <li class="active">最新消息</li>
                         </ol>
-                        <!--lp start -->
-                        <section class="lp">
-                            <h1>教育宣導影音</h1>
-                            <!--topfunction -->
-                            <div class="topfunction">
-                                <ul>
-                                    <li><a href="#" class="rss">RSS訂閱</a></li>
-                                    <li><a href="#" class="condition">條件查詢</a></li>
+                        <!--FontSize start -->
+                        <div class="FontSize">
+                            <ul>
+                                <li><a class="btn btn-lg hidden-xs" href="#" id="incfont">A+</a></li>
+                                <li><a class="btn btn-sm hidden-xs" href="#" id="decfont">A-</a></li>
+                            </ul>
+                        </div>
+                        <noscript> 字級大小SCRIPT，如您的瀏覽器不支援，可利用鍵盤 Ctrl + (+)放大 (-)縮小來改變字型大小。 </noscript>
+                        <!--cp start -->
+                        <section class="cp" id="ContentPage">
+                            <h1>毒性及關注化學物質事故報知方式</h1>
+                            <article>
+                                <p> 依據：毒性及關注化學物質管理法第四十一條第二項。<br> 公告事項：運作人依據毒性及關注化學物質管理法第四十一條第一項規定報知時，應以下列方式之一為之：<br> 一、報知專線為０八０００六六六六六環保公害陳情專線、一九九九縣市服務專線、環保局二十四小時緊急電話。<br> 二、報知通訊電話為一一０、一一九緊急電話。<br> 三、直轄市、縣（市）主管機關指定之通訊或傳真號碼、網際網路或其他科技設備傳送方式報知。<br>
+                                </p>
+                            </article>
+                            <div class="col-md-12 col-xs-12 TaiwanMap">
+                                <ul class="map map-service">
+                                    <li class="location1 active" id="map_AREA_N">
+                                        <ul>
+                                            <li class="N1"><a title="臺北市環保局" href="https://www.dep.gov.taipei/News_Content.aspx?n=46CF15C455648ECE&sms=8E0B16DC6964C5D2&s=1284CCDE0EA07969" target="_blank">臺北市環保局</a></li>
+                                            <li class="N2"><a title="基隆市環保局" href="http://www.klepb.gov.tw/news/index-1.asp?m1=11&m2=56&gp=&id=5430" target="_blank">基隆市環保局</a></li>
+                                            <li class="N3"><a title="新北市環保局" href="https://www.epd.ntpc.gov.tw/Article?catID=1920" target="_blank">新北市環保局</a></li>
+                                            <li class="N4"><a title="桃園市環保局" href="https://www.tydep.gov.tw/TYDEP/Message/Detail/4178" target="_blank">桃園市環保局</a></li>
+                                            <li class="N5"><a title="新竹市環保局" href="https://www.hccepb.gov.tw/business-03.php?id=11&Bid=3&BBid=50" target="_blank">新竹市環保局</a></li>
+                                            <li class="N5_2"><a title="新竹縣環保局" href="https://www.hcepb.gov.tw/index.php?option=com_content&view=article&id=2445:2020-02-12-17-10-50&catid=62&Itemid=164" target="_blank">新竹縣環保局</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="location2 active" id="map_AREA_C">
+                                        <ul>
+                                            <li class="C1"><a title="苗栗縣環保局" href="https://www.mlepb.gov.tw/business05.php" target="_blank">苗栗縣環保局</a></li>
+                                            <li class="C2"><a title="臺中市環保局" href="https://www.epb.taichung.gov.tw/1466271/Lpsimplelist" target="blank">臺中市環保局</a></li>
+                                            <li class="C3"><a title="彰化縣環保局" href="https://www.chepb.gov.tw/a45395129834624255467/a4SPage" target="blank">彰化縣環保局</a></li>
+                                            <li class="C4"><a title="南投縣環保局" href="https://www.ntepb.gov.tw/sub/content/index.aspx?Parser=1,16,156,125" target="_blank">南投縣環保局</a></li>
+                                            <li class="C5"><a title="雲林縣環保局" href="https://www.ylepb.gov.tw/latestevent/index-1.asp?Parser=9,3,19,18,,,352" target="_blank">雲林縣環保局</a></li>
+                                            <li class="C6_2"><a title="嘉義市環保局" href="http://www.cycepb.gov.tw/toxicity/toxicity.html" target="_blank">嘉義市環保局</a></li>
+                                            <li class="C6"><a title="嘉義縣環保局" href="https://cyepb.cyhg.gov.tw/cp.aspx?n=33F0EF1EE38A37F9&s=508A1FF1CEB22AAA" target="_blank">嘉義縣環保局</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="location3 active" id="map_AREA_S">
+                                        <ul>
+                                            <li class="S1"><a title="臺南市環保局" href="https://web.tainan.gov.tw/epb/cp.aspx?n=22514" target="_blank">臺南市環保局</a></li>
+                                            <li class="S2"><a title="高雄市環保局" href="https://www.erc.nkust.edu.tw/toxic/php/contact.php" target="_blank">高雄市環保局</a></li>
+                                            <li class="S3"><a title="屏東縣環保局" href="https://www.ptepb.gov.tw/News_Content.aspx?n=A02F5CB9A92562CD&sms=9877E5A9E0C3FE28&s=AA2F7D429110B6F8" target="_blank">屏東縣環保局</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="location4 active" id="map_AREA_E">
+                                        <ul>
+                                            <li class="E1"><a title="宜蘭縣環保局" href=" https://www.ilepb.gov.tw/Jobs/01006/01006.aspx" target="_blank">宜蘭縣環保局</a></li>
+                                            <li class="E2"><a title="花蓮縣環保局" href="https://www.hlepb.gov.tw/cht/index.php?code=list&flag=detail&ids=74&article_id=1916" target="_blank">花蓮縣環保局</a></li>
+                                            <li class="E3"><a title="臺東縣環保局" href="https://www.taitung.gov.tw/News_Content.aspx?n=57F9B82755DEC328&sms=C75A4BF1F464785E&s=C1B834C6E5FFD6F3" target="_blank">臺東縣環保局</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="location5 active" id="map_AREA_I">
+                                        <ul>
+                                            <li class="Island3"><a title="連江縣環保局" href="https://kepb.kinmen.gov.tw/cp.aspx?n=260C07B8E6E8F921" target="_blank">連江縣環保局</a></li>
+                                            <li class="Island1"><a title="金門縣環保局" href="https://kepb.kinmen.gov.tw/cp.aspx?n=260C07B8E6E8F921" target="_blank">金門縣環保局</a></li>
+                                            <li class="Island2"><a title="澎湖縣環保局" href="https://www.phepb.gov.tw/home.jsp?id=133&act=view&dataserno=202003130003" target="_blank">澎湖縣環保局</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </div>
-                            <!--分類 start -->
-                            <nav class="category">
-                                <ul>
-                                    <li class="here"><a href="#">全部</a></li>
-                                    <li><a href="#">食安宣導</a></li>
-                                    <li><a href="#">政策宣導</a></li>
-                                    <li><a href="#">防災宣導</a></li>
-                                    <li><a href="#">環藥小教室</a></li>
-                                    <li><a href="#">認識環衛害蟲</a></li>
-                                    <li><a href="#">安全用藥</a></li>
-                                </ul>
-                            </nav>
-                            <!--分類 end -->
-                            <!--listphoto02 start -->
-                            <section class="listphoto02">
-                                <ul>
-                                    <li>
-                                        <div class="image"><img src="https://www.tcsb.gov.tw/Public/Images/201901/8401901161359f442b_t.PNG" alt=""></div>
-                                        <div class="content">
-                                            <div class="assort">食安宣導</div>
-                                            <h3><a href="#">食安守門員 化學局從源頭把關</a></h3>
-                                            <div class="data">發布日期：108-03-31</div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="image"><img src="https://www.tcsb.gov.tw/Public/Images/201901/027190116135891d2f_t.PNG" alt=""></div>
-                                        <div class="content">
-                                            <div class="assort">食安宣導</div>
-                                            <h3><a href="#">食安守護網-政府把關篇</a></h3>
-                                            <div class="data">發布日期：108-02-31</div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="image"><img src="https://www.tcsb.gov.tw/Public/Images/201901/8341901171417924d0_t.jpg" alt=""></div>
-                                        <div class="content">
-                                            <div class="assort">食安宣導</div>
-                                            <h3><a href="#">食安守護網-政府把關篇</a></h3>
-                                            <div class="data">發布日期：108-01-02</div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </section>
-                            <!--listphoto02  end -->
-                            <!--page start -->
-                            <section class="page"><span class="data"> 共<em>308</em>筆資料，第<em>1/18</em>頁，</span>
-                                <ul class="number">
-                                    <li class="first">
-                                        <a title="第一頁" href="#">
-                                            << </a> </li> <li class="prev">
-                                                <a title="上1頁" href="#">
-                                                    < </a> </li> <li class="here"><a href="#" title="1">1</a></li>
-                                    <li class="hidden-xs"><a href="#" title="2">2</a></li>
-                                    <li class="hidden-xs"><a href="#" title="3">3</a></li>
-                                    <li class="hidden-xs"><a href="#" title="4">4</a></li>
-                                    <li class="hidden-xs"><a href="#" title="5">5</a></li>
-                                    <li class="next"><a title="下1頁" href="#"> > </a></li>
-                                    <li class="last"><a title="最後一頁" href="#"> >> </a></li>
-                                </ul>
-                                <span class="items">每頁顯示 <a href="#">20</a> <a href="#">40</a> <a href="#">60</a>
-                                    </ul> 筆 </span>
-                            </section>
-                            <!--page  end -->
-                            <!--bottomfunction start -->
-                            <div class="bottomfunction">
-                                <div class="share2"><span>分享</span>
-                                    <ul>
-                                        <li><a href="#" class="fb"><img src="images/share2_01.png" alt="facebook"></a></li>
-                                        <li><a href="#" class="google"><img src="images/share2_02.png" alt="google"></a></li>
-                                        <li><a href="#" class="twitter"><img src="images/share2_03.png" alt="twitter"></a></li>
-                                        <li><a href="#" class="line"><img src="images/share2_04.png" alt="line"></a></li>
-                                        <li><a href="#" class="forward"><img src="images/share2_05.png" alt="轉寄友人"></a></li>
-                                        <li><a href="#" class="print"><img src="images/share2_06.png" alt="列印"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="data">
-                                    <ul>
-                                        <li>點閱次數：1,231</li>
-                                        <li>最近更新日期：105-05-10</li>
-                                        <li><a href="#">回上一頁</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!--bottomfunction end -->
                         </section>
-                        <!--lp end -->
+                        <!--cp end -->
                         <!--右欄資訊 end -->
                     </div>
                 </div>
@@ -398,6 +369,9 @@
     </div>
     </div>
     <a href="#" class="back_page icon-reply-1"></a> <a href="#" class="scrollToTop"></a>
+    <!--燈箱js -->
+    <script src="assets/dist/js/lightbox-plus-jquery.js"></script>
+    <!--這一頁有燈箱效果，請加上此js -->
     <script src="assets/js/jquery-1.11.2.js"></script>
     <!-- Bootstrap JavaScript -->
     <script src="assets/module/bootstrap-3.3.2/js/bootstrap.min.js"></script>

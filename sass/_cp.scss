@@ -1,7 +1,5 @@
 @charset "utf-8";
-
 /*---------------------- FontSize*/
-
 .FontSize {
     font-size: 1.4em;
     float: right;
@@ -39,18 +37,11 @@
         }
     }
 }
-
-
 /*----------------------------------------------------info*/
-
 .cp article h2 {
     // clear: both;
 }
-
-
-
 /*---------------cp內容*/
-
 .cp article {
     clear: both;
     padding-bottom: 10px;
@@ -83,7 +74,7 @@
     }
     h5 {
         font-size: 1.15em;
-         color: $_secondaryColor;
+        color: $_secondaryColor;
     }
     h6 {
         font-size: 1.08em;
@@ -111,7 +102,6 @@
         }
     }
 }
-
 .cp article .visionphoto {
     margin: 0 auto 20px;
     width: 791px;
@@ -125,7 +115,6 @@
         }
     }
 }
-
 .cp article ul.cplist01 {
     margin: 0px 0;
     padding: 0px;
@@ -139,15 +128,14 @@
         }
     }
 }
-
 .cp article .info {
     margin: 0px 0 5px;
     padding: 0 0 10px;
     clear: both;
     float: none;
-    display:inline-block;
-    @media (max-width: 767px){
-        display:block;
+    display: inline-block;
+    @media (max-width: 767px) {
+        display: block;
     }
     li {
         display: inline-block;
@@ -160,9 +148,7 @@
         }
     }
 }
-
 /*---------------------文章內主圖 */
-
 .cp article figure {
     margin: 0 0 20px;
     &.image_right {
@@ -204,7 +190,6 @@
         }
     }
 }
-
 @media (max-width:767px) {
     .cp article figure {
         img {
@@ -225,10 +210,7 @@
         }
     }
 }
-
-
 /*--------------------------------------------cpTb*/
-
 .cpTb {
     table {
         border-collapse: collapse;
@@ -280,7 +262,6 @@
         }
     }
 }
-
 @media only screen and (max-width: 480px) {
     .cpTb table,
     .cpTb thead,
@@ -318,27 +299,18 @@
         }
     }
 }
-
-
 /* ---------------------video */
-
 .video {
     width: 640px;
     @media (max-width: 767px) {
         width: 100%;
     }
 }
-
-
 /*----------------附件下載*/
-
 .download {
     clear: both;
 }
-
-
 /*------------------table*/
-
 .cp article table {
     margin: 0 auto 2em;
     width: 100%;
@@ -392,10 +364,7 @@
         }
     }
 }
-
-
 /* ------------gmap */
-
 .cp article .gmap {
     clear: both;
     margin: 15px auto;
@@ -409,10 +378,7 @@
         height: 400px;
     }
 }
-
-
 /*------------------------相關照片*/
-
 .photolist {
     margin: 0;
     padding: 0;
@@ -423,7 +389,7 @@
         border: 1px solid #ddd;
         &:after {
             padding-top: 65%;
-            content:'';
+            content: '';
             display: block;
         }
         img {
@@ -454,7 +420,6 @@
         overflow: hidden;
     }
 }
-
 @media (max-width:767px) {
     .photolist figure {
         height: auto
@@ -471,103 +436,1277 @@
         overflow: inherit;
     }
 }
-
 #ContentPage p img,
 #ContentPage article img,
 #ContentPage p iframe {
     max-width: 100% !important;
 }
-
-
 /*-----------------燈箱效果修正*/
-
 .lb-data .lb-caption {
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 1.5em;
     font-weight: normal
 }
-
 /* ---------網頁404 */
-.cp article  .bolck404{
-    margin: 0  0 0 ;
-
-    .web404{
+.cp article .bolck404 {
+    margin: 0 0 0;
+    .web404 {
         background-color: #dcdcdc;
         border-radius: 5px;
         padding: 15px;
-        ul{
+        ul {
             margin: 0 0 20px 0px;
             padding: 0;
-            li{
+            li {
                 display: inline-block;
-                color:$_aColor;
+                color: $_aColor;
                 margin: 0 30px 0 0;
                 position: relative;
-                @media (max-width: 767px){
+                @media (max-width: 767px) {
                     display: block;
                     margin: 0 0 20px;
                 }
-                &.icon-reply:before, &.icon-home:before, &.icon-sitemap:before{
-                    content:'';
+                &.icon-reply:before, &.icon-home:before, &.icon-sitemap:before {
+                    content: '';
                     width: 25px;
                     height: 25px;
                     padding: 3px;
                     @include border-radius(50%);
-                    background-color:$_aHover;
+                    background-color: $_aHover;
                     color: #fff;
                 }
-                a{
+                a {
                     color: #333;
                     padding: 0 0 0 5px;
-                    &:hover{
-                        color:$_aHover;
+                    &:hover {
+                        color: $_aHover;
                     }
                 }
             }
         }
-
-
-        span{
-           margin: 0 0 20px;
-           position: relative;
-
-           &.icon-search:before{
-            content:'';
+        span {
+            margin: 0 0 20px;
+            position: relative;
+            &.icon-search:before {
+                content: '';
                 width: 25px;
                 height: 25px;
                 padding: 3px;
                 @include border-radius(50%);
-                background-color:$_aHover;
+                background-color: $_aHover;
                 color: #fff;
-           }
-        }
-        .input-group{
-            margin:10px 0 0 0;
-            input.form-control{
-                border:1px solid #fff;
             }
-            .btn{
+        }
+        .input-group {
+            margin: 10px 0 0 0;
+            input.form-control {
+                border: 1px solid #fff;
+            }
+            .btn {
                 background-color: #666;
                 color: #fff;
             }
         }
     }
 }
-.cp{
-    .apply_btn{
-        float:right;
+.cp {
+    .apply_btn {
+        float: right;
         margin-left: 10px;
-        a{
-            color:#fff;
-            text-decoration:none;
-            &:hover{
-                color:#fff;
-                text-decoration:none;
+        a {
+            color: #fff;
+            text-decoration: none;
+            &:hover {
+                color: #fff;
+                text-decoration: none;
             }
         }
-        @media (max-width: 767px){
+        @media (max-width: 767px) {
             margin: 0 0 10px 0;
         }
     }
-
+}
+/*----------------------------------------------map----*/
+.map {
+    display: block;
+    margin: 2em auto 3em auto !important;
+    z-index: 1;
+    position: relative;
+    width: 350px;
+    height: 448px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(../images/map.png) 0 0 no-repeat;
+}
+.TotalHome {
+    color: #333;
+    margin: 0em 0 2em 0;
+}
+.TotalHome h3 {
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+.TotalHome ul {
+    list-style-type: inherit;
+}
+.TotalHome ol {
+    list-style-type: decimal;
+}
+.TotalHome ol ol {
+    list-style-type: disc;
+}
+.TotalHome ul li:nth-child(1) {
+    color: #2c71c7;
+}
+.TotalHome ul li:nth-child(2) {
+    color: #83b958;
+}
+.TotalHome ul li:nth-child(3) {
+    color: #b98baf;
+}
+.TotalHome ul li:nth-child(4) {
+    color: #e3b92a;
+}
+.TotalHome ul li:nth-child(5) {
+    color: #cc3000;
+}
+.map .location1,
+.map .location2,
+.map .location3,
+.map .location4,
+.map .location5 {
+    position: absolute;
+    /* z-index: 1; */
+    display: none;
+    list-style: none !important;
+}
+.map .location1 li,
+.map .location2 li,
+.map .location3 li,
+.map .location4 li,
+.map .location5 li {
+    font-size: 1em;
+    // width: 105px;
+    padding: 4px;
+    cursor: pointer;
+    line-height: 1.2em;
+    color: #FFF;
+    z-index: 9999;
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    transition: .3s ease-out;
+}
+.map .location1 li:before,
+.map .location2 li:before,
+.map .location3 li:before,
+.map .location4 li:before,
+.map .location5 li:before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 1px;
+    z-index: -1;
+    transition: .3s ease-out;
+}
+.map .location1 li:after,
+.map .location2 li:after,
+.map .location3 li:after,
+.map .location4 li:after,
+.map .location5 li:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/map-service.png) no-repeat;
+    background-size: contain;
+    -webkit-transform: rotate(0deg) !important;
+    transform: rotate(0deg) !important;
+}
+.map .location1 li:hover,
+.map .location1 li:focus {
+    background: darken(#d44025, 15);
+    color: #fff !important;
+}
+.map .location2 li:hover,
+.map .location2 li:focus {
+    background: darken(#017f9b, 15);
+    color: #fff !important;
+}
+.map .location3 li:hover,
+.map .location3 li:focus {
+    background: darken(#a45b82, 15);
+    color: #fff !important;
+}
+.map .location4 li:hover,
+.map .location4 li:focus {
+    background: darken(#5f7c0f, 15);
+    color: #fff !important;
+}
+.map .location5 li:hover,
+.map .location5 li:focus {
+    background: darken(#927022, 15);
+    color: #fff !important;
+}
+.map .location1 li a,
+.map .location2 li a,
+.map .location3 li a,
+.map .location4 li a,
+.map .location5 li a {
+    color: #ffffff !important;
+    cursor: default;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    z-index: 99;
+}
+.map .location1 {
+    top: 22px;
+    left: 209px;
+    width: 134px;
+    height: 109px;
+    background: url(../images/map_a.png) 0 0 no-repeat;
+    z-index: 9;
+}
+.map .location1 li {
+    background: #d44025;
+}
+.map .location1 li:before {
+    background: #d44025;
+}
+.map .location2 {
+    top: 93px;
+    left: 118px;
+    width: 159px;
+    height: 190px;
+    background: url(../images/map_b.png) 0 0 no-repeat;
+    z-index: 8;
+}
+.map .location2 li {
+    background: #017f9b;
+}
+.map .location2 li:before {
+    background: #017f9b;
+}
+.map .location3 {
+    bottom: 0px;
+    left: 109px;
+    width: 123px;
+    height: 197px;
+    background: url(../images/map_c.png) 0 0 no-repeat;
+    z-index: 7;
+}
+.map .location3 li {
+   
+    padding: 6px 4px;
+    background: #a45b82;
+}
+.map .location3 li:before {
+    background: #a45b82;
+}
+.map .location4 {
+    top: 58px;
+    right: 9px;
+    width: 147px;
+    height: 348px;
+    background: url(../images/map_d.png) 0 0 no-repeat;
+    z-index: 6;
+}
+.map .location4 li {
+    background: #5f7c0f;
+}
+.map .location4 li:before {
+    background: #5f7c0f;
+}
+.map .location5 {
+    top: 26px;
+    left: -100px;
+    width: 67px;
+    height: 276px;
+    background: url(../images/map_e.png) 0 0 no-repeat;
+}
+.map .location5 li {
+    background: #927022;
+}
+.map .location5 li:before {
+    background: #927022;
+}
+.map .active {
+    opacity: 1;
+    display: block !important;
+}
+/*----map home style---*/
+.map-home .location1 li.N1 {
+    top: -55px;
+    left: 50px;
+}
+.map-home .location1 li.N1:before, .map-home .location1 li.N1:after {
+    top: 60px;
+    right: 66px;
+    width: 30px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.map-home .location1 li.N1:after {
+    right: 62px;
+    top: 60px;
+}
+.map-home .location1 li.N2 {
+    top: -42px;
+    left: -62px;
+}
+.map-home .location1 li.N2:before, .map-home .location1 li.N2:after {
+    top: 67px;
+    left: 65px;
+    width: 52px;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+.map-home .location1 li.N2:after {
+    left: 97px;
+    top: 79px;
+}
+.map-home .location1 li.N3 {
+    top: 20px;
+    right: -114px;
+}
+.map-home .location1 li.N3:before, .map-home .location1 li.N3:after {
+    top: 11px;
+    right: 102px;
+    width: 68px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.map-home .location1 li.N3:after {
+    right: 113px;
+    top: -2px;
+}
+.map-home .location1 li.N4 {
+    top: 8px;
+    left: -118px;
+}
+.map-home .location1 li.N4:before, .map-home .location1 li.N4:after {
+    top: 19px;
+    left: 105px;
+    width: 51px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.map-home .location1 li.N4:after {
+    left: 151px;
+    top: 13px;
+}
+.map-home .location1 li.N5 {
+    top: 60px;
+    left: -153px;
+}
+.map-home .location1 li.N5:before, .map-home .location1 li.N5:after {
+    top: 0px;
+    left: 99px;
+    width: 64px;
+    -webkit-transform: rotate(-17deg);
+    transform: rotate(-17deg);
+}
+.map-home .location1 li.N5:after {
+    left: 150px;
+    top: -16px;
+}
+.map-home .location2 li.C1 {
+    top: 43px;
+    left: -103px;
+}
+.map-home .location2 li.C1:before, .map-home .location2 li.C1:after {
+    top: 33px;
+    left: 103px;
+    width: 47px;
+    -webkit-transform: rotate(23deg);
+    transform: rotate(23deg);
+}
+.map-home .location2 li.C1:after {
+    top: 30px;
+    left: 134px;
+}
+.map-home .location2 li.C2 {
+    top: 94px;
+    left: -118px;
+}
+.map-home .location2 li.C2:before, .map-home .location2 li.C2:after {
+    top: 12px;
+    left: 102px;
+    width: 52px;
+    -webkit-transform: rotate(-17deg);
+    transform: rotate(-17deg);
+}
+.map-home .location2 li.C2:after {
+    top: -3px;
+    left: 140px;
+}
+.map-home .location2 li.C3 {
+    top: 145px;
+    left: -118px;
+}
+.map-home .location2 li.C3:before, .map-home .location2 li.C3:after {
+    top: -9px;
+    left: 102px;
+    width: 55px;
+    -webkit-transform: rotate(152deg);
+    transform: rotate(152deg);
+}
+.map-home .location2 li.C3:after {
+    top: -30px;
+    left: 140px;
+}
+.map-home .location3 li.S1 {
+    top: 40px;
+    left: -144px;
+}
+.map-home .location3 li.S1:before, .map-home .location3 li.S1:after {
+    top: -8px;
+    left: 132px;
+    width: 60px;
+    -webkit-transform: rotate(-39deg);
+    transform: rotate(-39deg);
+}
+.map-home .location3 li.S1:after {
+    top: -35px;
+    left: 176px;
+}
+.map-home .location3 li.S2 {
+    top: 82px;
+    left: -137px;
+}
+.map-home .location3 li.S2:before, .map-home .location3 li.S2:after {
+    top: -16px;
+    left: 127px;
+    width: 44px;
+    -webkit-transform: rotate(-54deg);
+    transform: rotate(-54deg);
+}
+.map-home .location3 li.S2:after {
+    top: -40px;
+    left: 148px;
+}
+.map-home .location3 li.S3 {
+    top: 119px;
+    left: -119px;
+}
+.map-home .location3 li.S3:before, .map-home .location3 li.S3:after {
+    top: -29px;
+    left: 110px;
+    width: 63px;
+    -webkit-transform: rotate(105deg);
+    transform: rotate(105deg);
+}
+.map-home .location3 li.S3:after {
+    top: -67px;
+    left: 140px;
+}
+.map-home .location3 li.S4 {
+    bottom: 23px;
+    left: -105px;
+}
+.map-home .location3 li.S4:before, .map-home .location3 li.S4:after {
+    bottom: 64px;
+    left: 100px;
+    width: 69px;
+    -webkit-transform: rotate(-80deg);
+    transform: rotate(-80deg);
+}
+.map-home .location3 li.S4:after {
+    bottom: 90px;
+    left: 133px;
+}
+.map-home .location3 li.S5 {
+    bottom: -15px;
+    right: 20px;
+}
+.map-home .location3 li.S5:before, .map-home .location3 li.S5:after {
+    top: -41px;
+    right: 0px;
+    width: 112px;
+    -webkit-transform: rotate(80deg);
+    transform: rotate(80deg);
+}
+.map-home .location3 li.S5:after {
+    top: -110px;
+    right: -34px;
+}
+.map-home .location3 li.S6 {
+    bottom: 6px;
+    right: -142px;
+}
+.map-home .location3 li.S6:before, .map-home .location3 li.S6:after {
+    top: -19px;
+    left: -71px;
+    width: 87px;
+    -webkit-transform: rotate(50deg);
+    transform: rotate(50deg);
+}
+.map-home .location3 li.S6:after {
+    top: -64px;
+    left: -64px;
+}
+.map-home .location4 li.E1 {
+    top: 80px;
+    right: -105px;
+}
+.map-home .location4 li.E1:before, .map-home .location4 li.E1:after {
+    top: 25px;
+    right: 103px;
+    width: 47px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.map-home .location4 li.E1:after {
+    top: 16px;
+    right: 115px;
+}
+.map-home .location4 li.E2 {
+    bottom: 47px;
+    right: -50px;
+}
+.map-home .location4 li.E2:before, .map-home .location4 li.E2:after {
+    top: 21px;
+    right: 103px;
+    width: 37px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.map-home .location4 li.E2:after {
+    top: 12px;
+    right: 115px;
+}
+/*----map service style---*/
+.map-service .location1 li.N1 {
+    top: -55px;
+    left: -2px;
+}
+.map-service .location1 li.N1:before, .map-service .location1 li.N1:after {
+    top: 50px;
+    right: 9px;
+    width: 65px;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+.map-service .location1 li.N1:after {
+    right: 10px;
+    top: 60px;
+}
+.map-service .location1 li.N2 {
+    top: -50px;
+    right: -90px;
+}
+.map-service .location1 li.N2:before, .map-service .location1 li.N2:after {
+    top: 50px;
+    left: -29px;
+    width: 75px;
+    -webkit-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+}
+.map-service .location1 li.N2:after {
+    right: 78px;
+    top: 61px;
+    left: inherit;
+}
+.map-service .location1 li.N3 {
+    top: 0px;
+    right: -135px;
+}
+.map-service .location1 li.N3:before, .map-service .location1 li.N3:after {
+    top: 25px;
+    right: 103px;
+    width: 60px;
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+.map-service .location1 li.N3:after {
+    right: 114px;
+    top: 20px;
+}
+.map-service .location1 li.N4 {
+    top: -35px;
+    left: -110px;
+}
+.map-service .location1 li.N4:before, .map-service .location1 li.N4:after {
+    top: 48px;
+    left: 78px;
+    width: 70px;
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+}
+.map-service .location1 li.N4:after {
+    left: 140px;
+    top: 71px;
+}
+.map-service .location1 li.N5 {
+    top: 35px;
+    left: -160px;
+}
+.map-service .location1 li.N5:before, .map-service .location1 li.N5:after {
+    top: 23px;
+    left: 99px;
+    width: 70px;
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+.map-service .location1 li.N5:after {
+    left: 139px;
+    top: 37px
+}
+// 
+.map-service .location1 li.N5_2 {
+    top: 0px;
+    left: -141px;
+}
+.map-service .location1 li.N5_2:before, .map-service .location1 li.N5:after {
+    top: 40px;
+    left: 99px;
+    width: 70px;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+.map-service .location1 li.N5_2:after {
+    left: 139px;
+    top: 37px
+}
+// 
+.map-service .location2 li.C1 {
+    top: 0px;
+    left: -58px;
+   
+}
+.map-service .location2 li.C1:before, .map-service .location2 li.C1:after {
+    top: 15px;
+    left: 100px;
+    width: 39px;
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+.map-service .location2 li.C1:after {
+    top: 13px;
+    left: 137px;
+}
+.map-service .location2 li.C2 {
+    top: 35px;
+    left: -80px;
+    
+}
+.map-service .location2 li.C2:before, .map-service .location2 li.C2:after {
+    top: 20px;
+    left: 100px;
+    width: 40px;
+    -webkit-transform: rotate(17deg);
+    transform: rotate(17deg);
+}
+.map-service .location2 li.C2:after {
+    top: 15px;
+    left: 160px;
+}
+.map-service .location2 li.C3 {
+    top: 75px;
+    left: -100px;
+    
+}
+.map-service .location2 li.C3:before, .map-service .location2 li.C3:after {
+    top: 19px;
+    left: 100px;
+    width: 40px;
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+.map-service .location2 li.C3:after {
+    top: -3px;
+    left: 150px;
+}
+.map-service .location2 li.C4 {
+    top: 120px;
+    left: 60px;
+    width: 70px;
+    border: 1px solid #fff;
+}
+.map-service .location2 li.C4:before, .map-service .location2 li.C4:after {
+    top: -3px;
+    left: 25px;
+    width: 22px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.map-service .location2 li.C4:after {
+    top: -17px;
+    left: 50px;
+}
+.map-service .location2 li.C5 {
+    top: 110px;
+    left: -116px;
+   
+}
+.map-service .location2 li.C5:before, .map-service .location2 li.C5:after {
+    top: 15px;
+    left: 95px;
+    width: 36px;
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+.map-service .location2 li.C5:after {
+    top: 1px;
+    left: 106px;
+}
+.map-service .location2 li.C6 {
+    top: 180px;
+    left: -130px;
+   
+}
+.map-service .location2 li.C6:before, .map-service .location2 li.C6:after {
+    top: 0px;
+    left: 99px;
+    width: 50px;
+    -webkit-transform: rotate(153deg);
+    transform: rotate(153deg);
+}
+.map-service .location2 li.C6:after {
+    top: -22px;
+    left: 132px;
+}
+//
+.map-service .location2 li.C6_2 {
+    top: 146px;
+    left: -130px;
+   
+}
+.map-service .location2 li.C6_2:before, .map-service .location2 li.C6:after {
+    top: 13px;
+    left: 100px;
+    width: 75px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.map-service .location2 li.C6_2:after {
+    top: -22px;
+    left: 132px;
+}
+// 
+.map-service .location3 li.S1 {
+   top: 55px;
+    left: -114px;
+}
+.map-service .location3 li.S1:before, .map-service .location3 li.S1:after {
+    top: 0px;
+    left: 100px;
+    width: 60px;
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+.map-service .location3 li.S1:after {
+    top: -19px;
+    left: 154px;
+}
+.map-service .location3 li.S2 {
+    top: 100px;
+    left: -117px;
+}
+.map-service .location3 li.S2:before, .map-service .location3 li.S2:after {
+    top: 6px;
+    left: 100px;
+    width: 60px;
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+.map-service .location3 li.S2:after {
+    top: -11px;
+    left: 159px;
+}
+.map-service .location3 li.S3 {
+    top: 150px;
+    left: -70px;
+}
+.map-service .location3 li.S3:before, .map-service .location3 li.S3:after {
+    top: -14px;
+    left: 95px;
+    width: 50px;
+    -webkit-transform: rotate(-44deg);
+    transform: rotate(-44deg);
+}
+.map-service .location3 li.S3:after {
+    top: -40px;
+    left: 158px;
+}
+.map-service .location4 li.E1 {
+    top: 35px;
+    right: -120px;
+}
+.map-service .location4 li.E1:before, .map-service .location4 li.E1:after {
+    top: 15px;
+    right: 103px;
+    width: 47px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.map-service .location4 li.E1:after {
+    top: 16px;
+    right: 115px;
+}
+.map-service .location4 li.E2 {
+    bottom: 180px;
+    right: -80px;
+}
+.map-service .location4 li.E2:before, .map-service .location4 li.E2:after {
+    top: 15px;
+    right: 103px;
+    width: 37px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.map-service .location4 li.E2:after {
+    top: 12px;
+    right: 115px;
+}
+.map-service .location4 li.E3 {
+    bottom: 60px;
+    right: -30px;
+}
+.map-service .location4 li.E3:before, .map-service .location4 li.E3:after {
+    top: 15px;
+    right: 103px;
+    width: 37px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.map-service .location4 li.E3:after {
+    top: 12px;
+    right: 115px;
+}
+.map-service .location5 li.Island1 {
+    top: 70px;
+    left: -100px;
+}
+.map-service .location5 li.Island1:before, .map-service .location5 li.Island1:after {
+    top: 35px;
+    right: -40px;
+    width: 50px;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+.map-service .location5 li.Island1:after {
+    top: 28px;
+    right: 17px;
+}
+.map-service .location5 li.Island2 {
+    bottom: 40px;
+    left: -100px;
+}
+.map-service .location5 li.Island2:before, .map-service .location5 li.Island2:after {
+    top: 20px;
+    left: 103px;
+    width: 41px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.map-service .location5 li.Island2:after {
+    top: 12px;
+    right: 115px;
+}
+.map-service .location5 li.Island3 {
+    top: 0px;
+    left: -100px;
+}
+.map-service .location5 li.Island3:before, .map-service .location5 li.Island3:after {
+    top: 20px;
+    left: 103px;
+    width: 41px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.map-service .location5 li.Island3:after {
+    top: 12px;
+    right: 115px;
+}
+/*----map medical style---*/
+.map-med .location1 li.N1 {
+    top: -45px;
+    left: 26px;
+}
+.map-med .location1 li.N1:before, .map-med .location1 li.N1:after {
+    top: 40px;
+    right: 41px;
+    width: 30px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.map-med .location1 li.N1:after {
+    top: 54px;
+    left: 38px;
+}
+.map-med .location1 li.N2 {
+    top: -32px;
+    left: -83px;
+}
+.map-med .location1 li.N2:before, .map-med .location1 li.N2:after {
+    top: 56px;
+    left: 97px;
+    width: 28px;
+    -webkit-transform: rotate(50deg);
+    transform: rotate(50deg);
+}
+.map-med .location1 li.N2:after {
+    left: 108px;
+    top: 56px;
+}
+.map-med .location1 li.N3 {
+    top: 21px;
+    left: -129px;
+}
+.map-med .location1 li.N3:before, .map-med .location1 li.N3:after {
+    top: 32px;
+    left: 102px;
+    width: 36px;
+    -webkit-transform: rotate(29deg);
+    transform: rotate(29deg);
+}
+.map-med .location1 li.N3:after {
+    left: 127px;
+    top: 32px;
+}
+.map-med .location2 li.C1 {
+    top: 8px;
+    left: -65px;
+}
+.map-med .location2 li.C1:before, .map-med .location2 li.C1:after {
+    top: 40px;
+    left: 95px;
+    width: 36px;
+    -webkit-transform: rotate(58deg);
+    transform: rotate(58deg)
+}
+.map-med .location2 li.C1:after {
+    top: 46px;
+    left: 113px;
+}
+.map-med .location2 li.C2 {
+    top: 41px;
+    left: -95px;
+}
+.map-med .location2 li.C2:before, .map-med .location2 li.C2:after {
+    top: 43px;
+    left: 98px;
+    width: 96px;
+    -webkit-transform: rotate(27deg);
+    transform: rotate(27deg);
+}
+.map-med .location2 li.C2:after {
+    top: 58px;
+    left: 185px;
+}
+.map-med .location2 li.C3 {
+    top: 91px;
+    left: -112px;
+}
+.map-med .location2 li.C3:before, .map-med .location2 li.C3:after {
+    top: 36px;
+    left: 100px;
+    width: 56px;
+    -webkit-transform: rotate(-149deg);
+    transform: rotate(-149deg);
+}
+.map-med .location2 li.C3:after {
+    top: 43px;
+    left: 140px;
+}
+.map-med .location2 li.C4 {
+    top: 144px;
+    left: -120px;
+}
+.map-med .location2 li.C4:before, .map-med .location2 li.C4:after {
+    top: 20px;
+    left: 101px;
+    width: 75px;
+    -webkit-transform: rotate(157deg);
+    transform: rotate(157deg);
+}
+.map-med .location2 li.C4:after {
+    top: -3px;
+    left: 169px;
+}
+.map-med .location3 li.S1 {
+    top: 40px;
+    left: -144px;
+}
+.map-med .location3 li.S1:before, .map-med .location3 li.S1:after {
+    top: 13px;
+    left: 139px;
+    width: 27px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.map-med .location3 li.S1:after {
+    top: 4px;
+    left: 155px;
+}
+.map-med .location3 li.S2 {
+    top: 82px;
+    left: -137px;
+}
+.map-med .location3 li.S2:before, .map-med .location3 li.S2:after {
+    top: 9px;
+    left: 136px;
+    width: 34px;
+    -webkit-transform: rotate(-31deg);
+    transform: rotate(-31deg);
+}
+.map-med .location3 li.S2:after {
+    top: -4px;
+    left: 156px;
+}
+.map-med .location3 li.S3 {
+    top: 119px;
+    left: -119px;
+}
+.map-med .location3 li.S3:before, .map-med .location3 li.S3:after {
+    top: 4px;
+    left: 136px;
+    width: 56px;
+    -webkit-transform: rotate(-29deg);
+    transform: rotate(-29deg);
+}
+.map-med .location3 li.S3:after {
+    top: -18px;
+    left: 184px;
+}
+.map-med .location4 li.E1 {
+    top: 1px;
+    right: -126px;
+}
+.map-med .location4 li.E1:before, .map-med .location4 li.E1:after {
+    top: 25px;
+    right: 103px;
+    width: 43px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.map-med .location4 li.E1:after {
+    top: 16px;
+    right: 130px;
+}
+.map-med .location4 li.E2 {
+    top: 53px;
+    bottom: inherit;
+    right: -121px;
+}
+.map-med .location4 li.E2:before, .map-med .location4 li.E2:after {
+    top: 4px;
+    right: 96px;
+    width: 43px;
+    -webkit-transform: rotate(47deg);
+    transform: rotate(47deg);
+}
+.map-med .location4 li.E2:after {
+    top: -17px;
+    right: 119px;
+}
+.map-med .location4 li.E3 {
+    top: 102px;
+    right: -98px;
+}
+.map-med .location4 li.E3:before, .map-med .location4 li.E3:after {
+    top: 19px;
+    right: 103px;
+    width: 37px;
+    -webkit-transform: rotate(22deg);
+    transform: rotate(22deg);
+}
+.map-med .location4 li.E3:after {
+    top: 6px;
+    right: 125px
+}
+.map-med .location4 li.E4 {
+    top: 160px;
+    right: -94px;
+}
+.map-med .location4 li.E4:before, .map-med .location4 li.E4:after {
+    top: 9px;
+    right: 99px;
+    width: 49px;
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+}
+.map-med .location4 li.E4:after {
+    top: -15px;
+    right: 130px;
+}
+.map-med .location4 li.E5 {
+    bottom: 47px;
+    right: -50px;
+}
+.map-med .location4 li.E5:before, .map-med .location4 li.E5:after {
+    top: 21px;
+    right: 103px;
+    width: 37px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.map-med .location4 li.E5:after {
+    top: 12px;
+    right: 125px;
+}
+/*---map medical---*/
+.map-med .location1 li:after,
+.map-med .location2 li:after,
+.map-med .location3 li:after,
+.map-med .location4 li:after,
+.map-med .location5 li:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/map-medical.png) no-repeat;
+    background-size: contain;
+    -webkit-transform: rotate(0deg) !important;
+    transform: rotate(0deg) !important;
+}
+/**/
+.map-med .location1 li.N2:after, .map-med .location1 li.N3:after,
+.map-med .location2 li.C2:after, .map-med .location2 li.C3:after,
+.map-med .location2 li.C4:after, .map-med .location3 li.S1:after,
+.map-med .location3 li.S3:after, .map-med .location4 li.E1:after,
+.map-med .location4 li.E2:after, .map-med .location4 li.E3:after,
+.map-med .location4 li.E4:after, .map-med .location4 li.E5:after {
+    background: url(../images/map-medical2.png) no-repeat;
+    background-size: 100%;
+    width: 20px !important;
+    height: 20px !important;
+}
+/*---map service---*/
+.map-service .location1 li:after,
+.map-service .location2 li:after,
+.map-service .location3 li:after,
+.map-service .location4 li:after,
+.map-service .location5 li:after,
+.map-service .location6 li:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/map-service.png) no-repeat;
+    background-size: contain;
+    -webkit-transform: rotate(0deg) !important;
+    transform: rotate(0deg) !important;
+}
+.ENsize {
+    font-size: 12px;
+}
+.map-service.ENsize .location1 li.N1:before {
+    top: 47px;
+    right: 2px;
+    width: 52px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.map-service.ENsize .location1 li.N1:after {
+    right: 8px;
+}
+.map-service.ENsize .location5 li.Island1:before, .map-service.ENsize .location5 li.Island1:after {
+    top: 29px;
+}
+.map-service.ENsize .location5 li.Island2:before, .map-service.ENsize .location5 li.Island2:after {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.map-med.ENsize .location1 li.N2:before, .map-med.ENsize .location1 li.N2:after {
+    top: 47px;
+    left: 89px;
+    width: 33px;
+    -webkit-transform: rotate(50deg);
+    transform: rotate(50deg);
+}
+.map-med.ENsize .location2 li.C1:before, .map-med.ENsize .location2 li.C1:after {
+    top: 40px;
+    left: 92px;
+    width: 46px;
+}
+.map-med.ENsize .location2 li.C3, .map-med.ENsize .location2 li.C4,
+.map-med.ENsize .location4 li, .map-home.ENsize .location4 li,
+.map-home.ENsize .location1 li, .map-home.ENsize .location2 li {
+    height: 35px;
+}
+.map-med.ENsize .location1 li.N2:after {
+    left: 108px;
+}
+.map-med.ENsize .location2 li.C1:after {
+    left: 117px;
+    top: 48px;
+}
+.map-med.ENsize .location2 li.C3, .map-med.ENsize .location4 li.E1 {
+    width: 115px;
+}
+.map-med.ENsize .location2 li.C4:after {
+    top: -2px;
+    -webkit-transform: rotate(167deg);
+    transform: rotate(167deg);
+}
+.map-home.ENsize .location1 li.N4:before {
+    top: 30px;
+    -webkit-transform: rotate(32deg);
+    transform: rotate(32deg);
+}
+.map-home.ENsize .location1 li.N2:before {
+    top: 50px;
+    -webkit-transform: rotate(59deg);
+    transform: rotate(59deg);
+}
+.map-home.ENsize .location1 li.N1:before {
+    top: 48px;
+}
+.map-med2 {
+    width: 20px;
+}
+@media (max-width:767px) {
+    .TaiwanMap {
+        max-width: 767px;
+        overflow-x: auto;
+    }
+    .map-service .location5 li.Island1 {
+        top: 3px;
+        right: 69px;
+        width: 72px;
+        font-size: 0.8em
+    }
+    .map-service .location5 li.Island1:before, .map-service .location5 li.Island1:after {
+        top: 55px;
+        right: 21px;
+        width: 33px;
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    .map-service .location5 li.Island1:after {
+        top: 55px;
+        right: 15px;
+    }
+    .map-service .location5 li.Island2 {
+        bottom: 129px;
+        left: -18px;
+        width: 61px;
+        font-size: 0.8em;
+    }
+    .map-service .location5 li.Island2:before, .map-service .location5 li.Island2:after {
+        top: 26px;
+        left: 16px;
+        width: 20px;
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    .map-service .location5 li.Island2:after {
+        top: 34px;
+        left: 23px;
+    }
+}
+@media (max-width:480px) {
+    .TaiwanMap {
+        max-width: 480px;
+        overflow-x: auto;
+    }
 }
