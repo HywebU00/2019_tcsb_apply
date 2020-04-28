@@ -532,39 +532,22 @@
         max-width: 767px;
         overflow-x: auto;
     }
-    @media(max-width: 577px){
-        max-width: 577px;
-        overflow-x: auto;
-    }
-    @media(max-width: 480px){
-        max-width: 480px;
-        overflow-x: auto;
-    }
+    // @media(max-width: 577px){
+    //     max-width: 577px;
+    //     overflow-x: auto;
+    // }
+    // @media(max-width: 480px){
+    //     max-width: 480px;
+    //     overflow-x: auto;
+    // }
 }
 .map {
     display: block;
     margin: 2em auto 3em auto !important;
     z-index: 1;
     position: relative;
-    width: 350px;
-    height: 448px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: url(../images/map.png) 0 0 no-repeat;
-    @media(max-width: 767px){
-        left:100px;
-        right:60px;
-    }
-    @media(max-width:577px){
-        left:160px;
-        right:160px;
-    }
-    @media(max-width:480px){
-        left:220px;
-        right:160px;
-    }
+    width: 730px;
+    height: 560px;
 }
 .TotalHome {
     color: #333;
@@ -691,8 +674,8 @@
     z-index: 99;
 }
 .map .location1 {
-    top: 22px;
-    left: 209px;
+    top: 113px;
+    right: 168px;
     width: 134px;
     height: 109px;
     background: url(../images/map_a.png) 0 0 no-repeat;
@@ -705,8 +688,8 @@
     background: #d44025;
 }
 .map .location2 {
-    top: 93px;
-    left: 118px;
+    top: 184px;
+    right: 234px;
     width: 159px;
     height: 190px;
     background: url(../images/map_b.png) 0 0 no-repeat;
@@ -719,8 +702,8 @@
     background: #017f9b;
 }
 .map .location3 {
-    bottom: 0px;
-    left: 109px;
+    top:341px;
+    right:279px;
     width: 123px;
     height: 197px;
     background: url(../images/map_c.png) 0 0 no-repeat;
@@ -735,8 +718,8 @@
     background: #a45b82;
 }
 .map .location4 {
-    top: 58px;
-    right: 9px;
+    top: 149px;
+    right: 170px;
     width: 147px;
     height: 348px;
     background: url(../images/map_d.png) 0 0 no-repeat;
@@ -749,8 +732,8 @@
     background: #5f7c0f;
 }
 .map .location5 {
-    top: 26px;
-    left: -100px;
+    top:115px;
+    left: 124px;
     width: 67px;
     height: 276px;
     background: url(../images/map_e.png) 0 0 no-repeat;
