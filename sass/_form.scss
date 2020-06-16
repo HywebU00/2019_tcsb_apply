@@ -45,6 +45,7 @@
                 border: 1px solid #ccc;
                 border-radius: 0;
                 padding: 4px 3px;
+                width:auto !important;
 
 
             }
@@ -53,11 +54,13 @@
                 border: 1px solid #ccc;
                 padding: 4px 3px;
 
+
             }
             input {
                 vertical-align: middle;
                 margin: 0 0px 0 0;
                 font-size: 100%;
+                width:auto;
             }
             textarea {
                 width: 100%;
@@ -74,6 +77,9 @@
             }
             p{
                 margin:10px 0;display: block;
+            }
+            label{
+                margin-right: 10px;
             }
         }
     }
@@ -150,26 +156,27 @@
 }
 
 
-// .btn_color {
-//     background-color: $_aColor;
-//     position: relative;
-//     border: 1px solid $_aColor;
-//     color: #fff;
-//     padding: 8px 15px;
-//     cursor: pointer;
-//     vertical-align: middle;
-//     margin: 0;
-//     font-family: "微軟正黑體";
-//     font-size: 1.06em;
-//     text-align: center;
-//     border-radius: 5px;
-//     position: relative;
-//     &:hover{
-//         color: #fff;
-//         background-color: $_cpaColor;
-//         border: 1px solid $_cpaColor;
-//     }
-// }
+.btn_color {
+    background-color: $_aColor;
+    position: relative;
+    border: 1px solid $_aColor;
+    color: #fff;
+    padding: 8px 15px;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 0;
+    font-family: "微軟正黑體";
+    font-size: 1.06em;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    width:auto;
+    &:hover{
+        color: #fff;
+        background-color: $_cpaColor;
+        border: 1px solid $_cpaColor;
+    }
+}
 .btn_lightgray {
     background-color: #c9c9c9 ;
     position: relative;
@@ -207,6 +214,7 @@
     text-align: center;
     border-radius: 5px;
     position: relative;
+    width:auto;
     &:hover{
         background-color: #626262;
         border: 1px solid #626262;
